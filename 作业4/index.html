@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <title>网页设计制作-作业4</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script>
+	
+function myMouseOver(next)
+{	
+	var next=document.getElementById(next);
+	next.style.display="block";
+}
+function myMouseOut(next)
+{
+	var next=document.getElementById(next);
+	next.style.display="none";
+</script>
 </head>
 
 <body>
@@ -13,6 +25,8 @@
 			这是一个使用CSS的网站
 		</h1>
 		<h1>ppp</h1>
+		<div id="test" class="text_aera" onmouseover="myMouseOver('text_aera')" onmouseout="myMouseOut('text_aera')">000
+		</div>
 	</div>
 	
 </body>
